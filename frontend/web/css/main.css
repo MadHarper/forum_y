@@ -1,0 +1,97 @@
+body{
+    background-color: #d0d0d0;
+}
+
+.wrap{
+    margin: 30px 130px 30px 130px;
+    border-radius: 6px;
+
+}
+
+.back{
+gradient(to bottom, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%)
+background-color: #333333;
+}
+
+.top{
+    min-height: 100px;
+    background-color: gray;
+    border-radius: 6px 6px 0 0;
+    padding: 0;
+}
+
+.top .navbar-inverse{
+    margin-top: 78px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.footer{
+    margin-top: 0;
+    min-height: 150px;
+    background-color: gray;
+    border-radius: 0 ;
+    padding: 0;
+}
+
+#main{
+    box-shadow: 0 0 5px 2px gray;
+    padding: 10px 0 0 0;
+}
+
+.theme .panel-default>.panel-heading{
+    background-color: #333333;
+    color: #c7abab;
+}
+
+div.panel-heading{
+    height: 40px;
+}
+
+.panel-body{
+    height: 1px;
+}
+
+
+.panel{
+    border: 1px solid #bab7b7;
+}
+
+.panel li{
+    height: 70px;
+
+}
+
+#central{
+    margin: 0 10px 16px 10px;
+}
+
+.forum-list{
+    padding-right: 14px;
+}
+
+.forum-list div.row{
+    margin-right: -4px;
+}
+
+.side{
+    margin-top: 40px;
+}
+
+.row .breadcrumb{
+    border-radius: 0;
+}
+
+.gfooter{
+    border-top: 1px solid #bab7b7;
+    padding: 0;
+}
+
+.gfooter ol{
+    padding-top: 8px;
+    padding-right: 14px;
+    height: 60px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
