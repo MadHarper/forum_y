@@ -47,6 +47,10 @@ class DefaultController extends Controller
         return $this->render('index', ['categories' => $categories]);
     }
 
+
+
+
+
     public function actionCkeditor(){
 
         $model = new Post();
