@@ -95,3 +95,67 @@ div.panel-heading{
     font-size: 10px;
 }
 
+.enter_sandman{
+    min-width: 320px !important;
+    padding: 22px;
+    top: 110%;
+    box-shadow: 0px 10px 70px rgba(0,0,0,0.3);
+}
+
+.user_service{
+    min-width: 320px;
+    top: 110%;
+    box-shadow: 0px 10px 70px rgba(0,0,0,0.3);
+}
+
+.btn_submit{
+    min-width: 100%;
+    background-color: gray;
+    color: #d0d0d0;
+}
+
+.login_div span{
+    font-size: 10px;
+    color: #bab7b7;
+    padding-bottom: 4px;
+}
+
+.login_div input.form-control{
+    margin-bottom: 24px;
+}
+
+.nav.navbar-nav.navbar-right li{
+    border-left: 1px solid;
+    border-color: rgba(255,255,255,0.1);
+}
+
+.nav.navbar-nav.navbar-right li.top_grlyph{
+    font-size: 18px;
+}
+
+.badge{
+    background-color: orange;
+    color: white;
+}
+
+.right{
+    position: absolute;
+    top: -10%;
+    left: 65%;
+}
+
+
+#globMesCnt {
+    -vendor-animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+#mesMesCnt{
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.nav.navbar-nav.navbar-right{
+    margin-right: 0;
+}
+

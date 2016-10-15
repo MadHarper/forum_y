@@ -20,6 +20,7 @@ class MainAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/main.css',
+        'css/animate.css'
     ];
     public $js = [
 

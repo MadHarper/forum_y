@@ -17,6 +17,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 '/' => 'forum/default/index',
+                'registr' => 'forum/auth/reg'
             ],
         ]
     ],
