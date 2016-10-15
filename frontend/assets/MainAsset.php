@@ -23,7 +23,7 @@ class MainAsset extends AssetBundle
         'css/animate.css'
     ];
     public $js = [
-
+        'js/ajax_login.js'
     ];
     public $depends = [
         'yii\web\YiiAsset', // yii.js , jQuery.js

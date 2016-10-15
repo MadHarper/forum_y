@@ -68,14 +68,14 @@ use yii\helpers\Url;
                                     <ul class="dropdown-menu enter_sandman">
                                         <li>
                                             <div class="input-group login_div">
-                                                <form id="login-form" action="#" method="post" role="form">
+                                                <form id="login-form" action="<?= Url::toRoute(['/forum/auth/ajaxlogin']);?>" method="post" role="form">
                                                     <input type="hidden" name="_csrf" value="<?= Yii::$app->request->csrfToken; ?>">
                                                     <div class="form-group field-loginform-username required">
-                                                        <input type="text" class="form-control" placeholder="Имя...">
+                                                        <input type="text" class="form-control" id="loginform-username" name="LoginForm[username]" placeholder="Имя...">
                                                         <p class="help-block help-block-error"></p>
                                                     </div>
                                                     <div class="form-group field-loginform-password required">
-                                                        <input type="password" class="form-control" placeholder="Пароль...">
+                                                        <input type="password" class="form-control" id="loginform-password" name="LoginForm[password]" placeholder="Пароль...">
                                                         <p class="help-block help-block-error"></p>
                                                     </div>
                                                     <div class="form-group field-loginform-rememberme">
@@ -93,19 +93,10 @@ use yii\helpers\Url;
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <button type="submit" class="btn btn-default btn_submit" name="login-button">Войти</button>                </div>
+                                                        <button type="submit" class="btn btn-default btn_submit" id="login_ajax_sbmt" name="login-button">Войти</button>                </div>
 
                                                 </form>
 
-                                                <?= $this->render('/auth/login.php');?>
-                                                <input type="text" class="form-control" placeholder="Имя...">
-                                                <input type="password" class="form-control" placeholder="Пароль...">
-                                                <div>
-                                                    <input type="checkbox" aria-label="sdasdasd">
-                                                    <span>Запомнить меня</span>
-                                                </div>
-
-                                                <button type="submit" class="btn btn-default btn_submit">Войти</button>
                                             </div><!-- /input-group -->
                                         </li>
                                     </ul>

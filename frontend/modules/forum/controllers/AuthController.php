@@ -14,6 +14,7 @@ use yii\helpers\Url;
 use frontend\modules\forum\models\AccountActivation;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
+use common\models\LoginForm;
 
 class AuthController extends Controller
 {
@@ -117,6 +118,20 @@ class AuthController extends Controller
             return $this->render('login', [
                 'model' => $model,
             ]);
+        }
+    }
+
+    public function actionAjaxlogin()
+    {
+        if (!\Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->renderAjax('log_fragment');
+        } else {
+            echo "0";
         }
     }
 
